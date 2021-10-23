@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+div{
+  border-radius: 15px;
+  padding:15px;
+}
+
+body{
+  font-family: "Rubik",sans-serif;
+  font-size:18px;
+  width: 100%;
+  background-color:  hsl(226, 43%, 10%);
+  color:white;
+  height: 100vh;
+}
+
+h3{
+  font-weight: 400;
+
+}
+p{
+  font-weight: 300;
+  line-height: 0.5em;
+}
+.card > p{
+  background-image: url("images/icon-ellipsis.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: left;
+}
+
+.card > span{
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.person > img{
+  width:75px;
+  height: 75px;
+  border-radius: 50%;
+  border:4px solid #dedddd;
+}
+
+.wrapper{
+  display:flex;
+  flex-direction: row;
+  width:80%;
+  height: 84%;
+  margin: 0 auto;
+}
+.personWrapper{
+  display:flex;
+  flex-direction: column;
+  padding:0;
+  align-items: center;
+  background-color: hsl(235, 46%, 20%);
+}
+.person{
+  background-color:hsl(246, 80%, 60%);
+  text-align: left;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+}
+
+
+.timeWrapper{
+  display:grid;
+  grid-template-columns: repeat(3,1fr) ;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  column-gap: 1em;
+  row-gap:1.5em;
+  padding:0;
+  padding-left: 2em;
+
+}
+
+.timeWrapper > div{
+  margin: 0;
+  font-size: 26px;
+  height: 96%;
+}
+
+
+
+.work,.play,.study,.exercise,.social,.selfCare{
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-position:  100% 0;
+  background-size: 30%;
+  padding:0;
+}
+.card{
+    background-color: hsl(235, 46%, 20%);
+    width:200px;
+     height:85%;
+
+    margin-top: 1.5em;
+    text-align: left;
+}
+
+.card:hover{
+  background-color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+
+.work{
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+}
+.play{
+  background-color:  hsl(195, 74%, 62%);
+  background-image: url("images/icon-play.svg");
+}
+.study{
+  background-color:  hsl(348, 100%, 68%);
+  background-image: url("images/icon-study.svg");
+}
+.social{
+  background-color: hsl(264, 64%, 52%);
+  background-image:url("images/icon-social.svg");
+}
+.exercise{
+  background-color: hsl(145, 58%, 55%);
+  background-image:url("images/icon-exercise.svg");
+}
+
+.selfCare{
+    background-color:hsl(43, 84%, 65%);
+    background-image:url("images/icon-self-care.svg");
+}
+
+
+.times{
+  background-color: hsl(235, 46%, 20%);
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-left:0;
+  padding-right: 5em;
+}
+
+.times > span{
+  cursor: pointer;
+  padding-top:15px;
+  padding-right: 15px;
+}
+
+.times>span:hover{
+  color:hsl(236, 100%, 87%);
+}
+
+.selected{
+  color:hsl(235, 45%, 61%);
+}
+@media screen and (max-width: 376px) {
+
+  .wrapper{
+    display:grid;
+    row-gap:1em;
+    padding:0;
+    grid-template-rows:1fr;
+    width:95%;
+  }
+  .timeWrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    padding-left: 0;
+  }
+  .personWrapper{
+    padding:0;
+    margin-right:18px;
+  }
+
+  .person{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .person >h3{
+    align-self: left;
+  }
+
+.person >img{
+  align-self:center;
+}
+  .times{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    padding:15px;
+  }
+  .card{
+    width:100%;
+    text-align: left;
+  }
+
+  .card > span{
+    display: inline-block;
+  position: absolute;
+  }
+  .card > h3{
+    margin-bottom: 0;
+  }
+ 
+}
