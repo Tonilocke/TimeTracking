@@ -160,7 +160,7 @@ p{
 .selected{
   color:hsl(235, 45%, 61%);
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 600px) {
 
   .wrapper{
     display:grid;
